@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="" href="./css/Map.css">
+  <link rel="stylesheet" href="./static/iconfont1/iconfont.css">
+  <link rel="stylesheet" href="./static/iconfont/iconfont.css">
+  <title>Map</title>
+</head>
+
+<body>
+  <div id="l-map"></div>
+  <div class="text">
+    <div id="r-start">起点 :  <input type="text" id="startId" size="20" /></div>
+    <div id="r-end">终点 :  <input type="text" id="endId" size="20" disabled/></div>
+    <div id="searchResultPanel"></div>
+    <div class="method">
+      <div id="foot"><span class="iconfont icon-walk"></span></div>
+      <div id="bus"><span class="iconfont icon-gongjiaoche3"></span></div>
+      <div id="car"><span class="iconfont icon-xiaoqiche3"></span></div>
+    </div>
+    <div id="r-result"></div>
+  </div>
+  <div class="current"><img src="./static/images/position (2).jpg" alt="当前位置定位图标"></div>
+  <div class="select">
+    <div id="s-foot"><span class="iconfont icon-walk"></span></div>
+    <div id="s-bus"><span class="iconfont icon-gongjiaoche3"></span></div>
+    <div id="s-car"><span class="iconfont icon-xiaoqiche3"></span></div>
+    <div id="s-more"><span class="iconfont icon-gengduo-copy"></span></div>
+  </div>
+
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://api.map.baidu.com/api?v=2.0&ak=6yAoynmTPNlTBa8z1X4LfwGE"></script>
+  <script src="./js/Map.js"></script>
+</body>
+
+</html>
