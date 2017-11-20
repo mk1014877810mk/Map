@@ -98,9 +98,6 @@ $(function () {
         , "location": map
       });
 
-    $("#startId").on("keyup", function () {
-
-    })
     as.addEventListener("onhighlight", function (e) {  //鼠标放在下拉列表上的事件
       e = e || event;
       var str = "";
@@ -315,22 +312,6 @@ $(function () {
       local.search(myValue);
     };
 
-
-    // 获取当前屏幕中地图中心点的位置
-    // function getCenterPlace(num) {
-    //   function myFun() {
-    //     var pp = map.getCenter();    //获取当前所在屏幕中地图的中心位置
-    //     map.centerAndZoom(pp, num);
-    //   }
-    //   var local = new BMap.LocalSearch(map, { //智能搜索
-    //     onSearchComplete: myFun
-    //   });
-    //   local.search();
-    // };
-
-
-
-
     // 在地图上显示当前所在的位置
     function showCurrentPlace(num) {
       num = num || 18;
@@ -386,8 +367,6 @@ $(function () {
       });
       transit.search(p1, p2);
     };
-
-
   });
 });
 
