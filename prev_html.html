@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>prev_html</title>
+	<style>
+		.box{
+			width:100%;
+			background-color:#ccc;
+			text-align:center;
+			margin-top:10px;
+			padding-top:10px;
+		}
+		.gs_address{
+			font-size:12px;
+			line-height:32px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="gs_name">卡凡（上海）信息技术有限公司</div>
+		<div class="gs_address">上海浦东新区张江高科技园区郭守敬路498号</div>
+	</div>
+	<div class="box">
+		<div class="gs_name">上海利莫网络科技有限公司</div>
+		<div class="gs_address">田林路388号新业大楼</div>
+	</div>
+	<div class="box">
+		<div class="gs_name">上海泛微网络科技股份有限公司</div>
+		<div class="gs_address">上海闵行区联航路1188号浦江智谷33号楼</div>
+	</div>
+	<div class="box">
+		<div class="gs_name">上海虎巴网络科技股份有限公司</div>
+		<div class="gs_address">天山路780号</div>
+	</div>
+	<div class="box">
+		<div class="gs_name">上海数果科技有限公司</div>
+		<div class="gs_address">上海市青浦区沪青平公路3938号移动智地1号楼603</div>
+	</div>
+	<div class="box">
+		<div class="gs_name">上海泛微网络科技股份有限公司</div>
+		<div class="gs_address">上海闵行区联航路1188号浦江智谷33号楼</div>
+	</div>
+
+	<script src="https://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script >
+	$(function(){
+		$(".box").click(function() {
+			var address=$(this).children('.gs_address').text();
+			console.log(address)
+			window.sessionStorage.setItem("address",address);
+			window.location.href="./position.html";
+		});
+	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+
+#l-map {
+  height: 100%;
+  width: 100%;
+}
+
+#r-result,#r-result table{
+  width:100%;
+}
+
+#r-result>div{
+  position: relative;
+  z-index: 1;
+}
+
+#r-result h1{
+  padding:4px 0px!important;
+}
+
+#r-result .suggest-plan-des{
+  padding: 23px 0px 0px 0px!important;
+  text-align: center;
+}
+
+#r-result .navtrans-view{
+  height: 46px!important;
+}
+
+#r-result>div>div{
+  padding: 0!important;
+  margin-bottom: 0!important;
+}
+
+#r-result>div>div>a{
+  display: none;
+}
+
+#r-end,
+#r-start {
+  width: 100%;
+}
+
+input{
+  width: 72%;
+  height: 20px;
+  margin-top: 2px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+
+.navtrans-res{
+  overflow: auto;
+  display: none;
+}
+
+.text {
+  width: 100%;
+  min-width: 320px;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding: 2% 0 0;
+  box-sizing: content-box;
+  display: none;
+}
+
+#foot,#bus,#car {
+  margin: 1% 5%;
+  width: 20%;
+  display: inline-block;
+}
+
+#foot span,#bus span,#car span {
+  font-size: 24px;
+}
+
+.current{
+  height: 34px;
+  position: fixed;
+  left: 14%;
+  bottom: 26%;
+  outline: none;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.8);
+  text-align: center;
+  line-height: 34px;
+}
+
+.current span{
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  font-size: 28px;
+  text-align: center;
+  color: rgb(86,100,110);
+  line-height: 34px;
+  margin-top: 1px;
+}
+
+.select{
+  width: 100%;
+  height: 36px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(255,255,255,.8);
+}
+
+.select div{
+  display: inline-block;
+  width: 24%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.select div span{
+  font-size: 30px;
+}
+
+.way{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 36px;
+  background-color: rgba(255,255,255,.8);
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding:5px;
+}
+
+#searchResultPanel {
+  border: 1px solid #C0C0C0;
+  width: 150px;
+  height: auto;
+  display: none;
+}
+
+.sel_n .sel_body_top,.sel_y .sel_body_top,.sel_n1 .sel_body_top{
+  width: 99% !important;
+  background: linear-gradient(to bottom,#fff,rgb(250,237,210)) !important;
+  border: 1px solid rgb(235,207,180);
+}
+
+#RouteAddress_DIV1,#RouteAddress_DIV0{
+  width:100% !important;
+}
+
+.RouteAddressTip{
+  position: static!important;
+  height: 20px!important;
+  line-height: 20px!important;
+}
+
+.trans-title{
+  position: relative;
+}
+
+.trans-title button{
+  position: absolute;
+  bottom: 26%;
+  right: 3%;
+  background-color: #FFF;
+  width: 12%;
+  height: 22px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 1px;
+  color: #000;
+  font-size: 12px;
+}
+
+.navtrans-view .navtrans-arrow{
+  top: 20px!important;
+  right: 24px!important;
+}
+
+.hide{
+  display: none !important;
+}
+
+.show{
+  display: block !important;
+}
+
+.active{
+  color:#0075ff;
+}
+
+.w100{
+  width: 100% !important;
+}
